@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700");
+
+* {
+	box-sizing: border-box; 
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: bold;
+	color: #fff;
+	background: #437dcc; 
+}
+
+#carousel {
+	overflow-x: hidden;
+	position: relative;
+}
+
+#carousel ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 3000px;
+}
+
+#carousel ul li {
+	float: left;
+}
+
+#carousel li img {
+	width: 600px;
+	height: 100vh;
+	o-object-fit: cover;
+	object-fit: cover;
+}
+
+.arrow-left, .arrow-right {
+	position: absolute;
+	top: 40%;
+	font-size: 60px;
+	cursor: pointer;
+	opacity: 0.5;
+	transition: .2s;
+}
+
+.arrow-left {
+	left: 30px;
+}
+
+.arrow-right {
+	right: 30px;
+}
+
+.arrow-left:hover, .arrow-right:hover {
+	opacity: 1;
+}
+
+.carousel-nav {
+	position: absolute;
+	bottom: 30px;
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+}
+
+.dot {
+	cursor: pointer;
+	opacity: 0.5;
+	transition: .1s;
+}
+
+.dot-active {
+	opacity: 1;
+}
+	
