@@ -67,12 +67,12 @@ $(function(){
 		var activeDot = dots.index($(".dot-active"));
 		var clickedDot = dots.index(this);
 		if (clickedDot > activeDot) {
-			for(i = activeDot; i < clickedDot; i++) {
+			for(var i = activeDot; i < clickedDot; i++) {
 				changeSlide();
 			}
 		} else if (clickedDot < activeDot) {
 			var loops = dotsNumber - activeDot + clickedDot;
-			for(j = 0; j < loops; j++) {
+			for(var j = 0; j < loops; j++) {
 				changeSlide();
 			}
 		}
